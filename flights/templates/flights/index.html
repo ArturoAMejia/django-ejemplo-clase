@@ -1,0 +1,18 @@
+{% extends 'flights/base.html' %}
+
+
+{% block title %} Vuelos {% endblock %}
+
+{% block body %}
+<h1>Vuelos:</h1>
+
+<ul>
+  {% for vuelo in vuelos %}
+  <li>
+    {{ vuelo }}
+  </li>
+  {% endfor %}
+</ul>
+
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'flights/base.html' %}
+
+
+{% block title %} Vuelo {{ vuelo.id }} {% endblock %}
+
+{% block body %}
+
+<h1>Vuelo {{ vuelo.id }}</h1>
+
+<ul>
+  <li>Origen: {{ vuelo.origen }} </li>
+  <li>Destino: {{ vuelo.destino }} </li>
+</ul>
+
+<a href="{% url 'index' %}">De vuelta a la lista completa</a>
+{% endblock %}
